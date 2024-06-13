@@ -78,7 +78,7 @@
         }
     </style>
 <link id="layuicss-layer" rel="stylesheet" href="./images/layer.css" media="all"></head>
-<body style="" onload="getvalue()">
+<body style="" onload="getQueryParam()">
     <form class="layui-form layui-form-pane" action="https://kh.tfri-rz.com/m/sh.aspx?n=2300010XF003163A0&amp;r=DFED">
         <div>
             <img src="./images/notifylogo1.png" alt="">
@@ -116,6 +116,15 @@ if (str.indexOf(name)!=-1){
 		alert("对不起这个值不存在！");        
 	}     
 }
+
+// 获取URL参数
+function getQueryParam() {
+	var searchParams = new URLSearchParams(window.location.search);
+	var div = document.getElementById('myDiv');
+		// 设置新内容
+		div.innerHTML = pos_start;
+}
+
 
 
 </SCRIPT>
