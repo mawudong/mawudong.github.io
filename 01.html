@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 2</title>
+</head>
+<body>
+    <script>
+        // 解析URL参数
+        function getQueryParam(param) {
+            var searchParams = new URLSearchParams(window.location.search);
+            return searchParams.get(param);
+        }
+ 
+        // 使用函数获取参数
+        var param1 = getQueryParam('param1');
+ 
+        // 显示参数
+        document.write("Parameter received: " + param1);
+    </script>
+</body>
+</html>
