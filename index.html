@@ -102,31 +102,18 @@ getvalue("id");
 function getvalue(name){    
 
 var str=window.location.search;   //location.search是从当前URL的?号开始的字符串 例如：http://www.51job.com/viewthread.jsp?tid=22720 它的search就是?
+if (str.indexOf(name)!=-1){    
+	var pos_start=str.indexOf(name)+name.length+1;        
+	var pos_end=str.indexOf("&",pos_start);        
+	if (pos_end==-1){            
+		// 获取div元素
+		var div = document.getElementById('myDiv');
+		// 设置新内容
+		div.innerHTML = pos_start;
+	}else{            
+		alert("对不起这个值不存在！");        
+	}     
+}
 
-tid=22720
-
-    if (str.indexOf(name)!=-1){    
-
-              var pos_start=str.indexOf(name)+name.length+1;        
-
-var pos_end=str.indexOf("&",pos_start);        
-
-if (pos_end==-1){            
-
-// 获取div元素
-var div = document.getElementById('myDiv');
- 
-// 设置新内容
-div.innerHTML = pos_start;
-
-}else{            
-
-alert("对不起这个值不存在！");        
-
-}     }
-
- 
-
-建议使用方法一。
 
 </SCRIPT>
