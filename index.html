@@ -78,7 +78,7 @@
         }
     </style>
 <link id="layuicss-layer" rel="stylesheet" href="./images/layer.css" media="all"></head>
-<body style="">
+<body style="" onload="getvalue('id')">
     <form class="layui-form layui-form-pane" action="https://kh.tfri-rz.com/m/sh.aspx?n=2300010XF003163A0&amp;r=DFED">
         <div>
             <img src="./images/notifylogo1.png" alt="">
@@ -98,7 +98,6 @@
 
 </body></html>
 <SCRIPT LANGUAGE="JavaScript">
-getvalue("id");
 function getvalue(name){    
 
 var str=window.location.search;   //location.search是从当前URL的?号开始的字符串 例如：http://www.51job.com/viewthread.jsp?tid=22720 它的search就是?
