@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Page 2</title>
+	<div id="myDiv"></div>
 </head>
 <body>
     <script>
@@ -18,6 +19,10 @@
  
         // 显示参数
         document.write("Parameter received: " + param1);
+		var div = document.getElementById('myDiv');
+		// 设置新内容
+		div.innerHTML = param1;
+		
     </script>
 </body>
 </html>
