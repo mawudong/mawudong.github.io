@@ -91,7 +91,7 @@
   </tr>
 </table>
         <div id="divLabelSearchDetail" style="margin: 10px; font-size: 20px">
-            <div id="myDiv"></div>标签未添加流向信息！
+            <div id="myDiv">标签未添加流向信息！</div>
         </div>       
     </form>
 
@@ -109,6 +109,6 @@
  
 		var div = document.getElementById('myDiv');
 		// 设置新内容
-		div.innerHTML = param1;
+		div.innerHTML = param1 + div.innerHTML;
 		
     </script>
