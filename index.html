@@ -91,7 +91,7 @@
   </tr>
 </table>
         <div id="divLabelSearchDetail" style="margin: 10px; font-size: 20px">
-            2300010XF003111A0标签未添加流向信息！<div id="myDiv"></div><div>11111</div>
+            2300010XF003111A0标签未添加流向信息！<div id="myDiv"></div><div id="myDiv2">11111</div>
         </div>       
     </form>
 
@@ -101,6 +101,8 @@
 function getvalue(){    
 
 var str=window.location.search;   //location.search是从当前URL的?号开始的字符串 例如：http://www.51job.com/viewthread.jsp?tid=22720 它的search就是?
+var div = document.getElementById('myDiv2');
+div.innerHTML = str;
 if (str.indexOf(name)!=-1){   
 	var name = "id"; 
 	var pos_start=str.indexOf(name)+name.length+1;        
